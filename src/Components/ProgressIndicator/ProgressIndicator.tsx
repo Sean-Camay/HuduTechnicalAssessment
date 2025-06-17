@@ -41,7 +41,7 @@ export const ProgressIndicator = ({
               ></div>
             )}
 
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center pt-6'>
               <div
                 className={`w-8 h-8 rounded-full border-2 flex items-center justify-center 
                 ${
