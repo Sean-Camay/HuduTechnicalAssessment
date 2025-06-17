@@ -26,7 +26,6 @@ export const TriggerSelect = ({ onNext, onPrev }: RecordSelectorProps) => {
   }
 
   const handleNext = () => {
-    // Ensure the selection is in the state before proceeding
     dispatch({ type: 'SET_TRIGGER', payload: selected })
     onNext()
   }

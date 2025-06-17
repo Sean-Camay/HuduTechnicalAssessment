@@ -28,7 +28,6 @@ export const ActionSelector = ({ onNext, onPrev }: ActionSelectorProps) => {
   }
 
   const handleNext = () => {
-    // Ensure the selection is in the state before proceeding
     dispatch({ type: 'SET_ACTION', payload: selected })
     onNext()
   }
