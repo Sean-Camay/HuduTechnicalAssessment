@@ -64,7 +64,7 @@ export const WorkflowSelector = ({ onNext }: WorkflowSelectorProps) => {
         ))}
       </div>
 
-      <div className='flex justify-end items-center border-t border-gray-200'>
+      <div className='flex justify-end items-center border-t border-gray-200 pt-2'>
         <NextButton onClick={onNext} disabled={!selected} />
       </div>
     </div>
