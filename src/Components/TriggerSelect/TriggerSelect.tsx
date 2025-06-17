@@ -32,7 +32,7 @@ export const TriggerSelect = ({ onNext, onPrev }: RecordSelectorProps) => {
   }
 
   return (
-    <div className='flex flex-col gap-5 max-w-3xl mx-auto'>
+    <div className='flex flex-col gap-5 max-w-3xl'>
       <h2 className='text-base mb-5 text-black'>
         What should trigger this workflow?
       </h2>
@@ -54,7 +54,7 @@ export const TriggerSelect = ({ onNext, onPrev }: RecordSelectorProps) => {
         ))}
       </div>
 
-      <div className='flex justify-end border-t border-gray-200'>
+      <div className='flex flex-row justify-between border-t border-gray-200'>
         <BackButton goBack={onPrev} />
 
         <FinishLaterButton />

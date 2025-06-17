@@ -21,12 +21,12 @@ export const ReviewSummary = ({ onPrev, onEdit }: ActionSelectorProps) => {
 
   return (
     <div className='flex flex-col gap-5 max-w-3xl mx-auto'>
-      <h2 className='text-xl mb-5 text-black'>
+      <h2 className='text-base mb-5 text-black'>
         Review your workflow below. Click a step to make edits if needed.
       </h2>
 
       <div className='p-4 border border-gray-200 rounded-lg bg-gray-50'>
-        <p className='mb-3'>
+        <p className='mb-3 text-sm'>
           When any of the following record types are created, add a(n){' '}
           {state.action}.
         </p>
@@ -53,7 +53,7 @@ export const ReviewSummary = ({ onPrev, onEdit }: ActionSelectorProps) => {
         </div>
       </div>
 
-      <div className='flex justify-between border-t border-gray-200 pt-2'>
+      <div className='flex justify-between border-t border-gray-200'>
         <BackButton goBack={onPrev} />
 
         <FinishLaterButton />

@@ -19,13 +19,21 @@ export const WorkflowSelector = ({ onNext }: WorkflowSelectorProps) => {
   const [selected, setSelected] = useState(state.base ?? '')
 
   const options = [
-    { id: 'Company', icon: <StoreIcon /> },
-    { id: 'Record', icon: <DescriptionIcon /> },
-    { id: 'Website', icon: <LanguageIcon /> },
-    { id: 'Expiration', icon: <EventIcon /> },
-    { id: 'User', icon: <PersonIcon /> },
-    { id: 'Group', icon: <GroupIcon /> },
-    { id: 'Integration', icon: <ElectricalServicesIcon /> },
+    { id: 'Company', name: 'Company', icon: <StoreIcon /> },
+    { id: 'Record', name: 'Record', icon: <DescriptionIcon /> },
+    { id: 'Website', name: 'Website', icon: <LanguageIcon /> },
+    {
+      id: 'Expiration',
+      name: 'Expiration',
+      icon: <EventIcon />,
+    },
+    { id: 'User', name: 'User', icon: <PersonIcon /> },
+    { id: 'Group', name: 'Group', icon: <GroupIcon /> },
+    {
+      id: 'Integration',
+      name: 'Integration',
+      icon: <ElectricalServicesIcon />,
+    },
   ]
 
   const handleOptionSelect = (optionId: string) => {
@@ -36,7 +44,7 @@ export const WorkflowSelector = ({ onNext }: WorkflowSelectorProps) => {
 
   return (
     <div className='flex flex-col gap-5 max-w-3xl'>
-      <p className='text-base mb-1 text-black'>
+      <p className='text-base text-black'>
         What will this workflow be based on?
       </p>
 
@@ -52,7 +60,7 @@ export const WorkflowSelector = ({ onNext }: WorkflowSelectorProps) => {
             onClick={() => handleOptionSelect(option.id)}
           >
             <span className='text-2xl mr-4 min-w-[30px]'>{option.icon}</span>
-            <span className='text-black'>{option.id}</span>
+            <span className='text-black'>{option.name}</span>
           </button>
         ))}
       </div>

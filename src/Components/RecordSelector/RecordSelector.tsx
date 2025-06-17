@@ -108,7 +108,7 @@ export const RecordSelector = ({ onNext, onPrev }: RecordSelectorProps) => {
             <span className='text-base'>{record.name}</span>
           </button>
         ))}
-        <div className='flex items-center mb-2 p-2 border-b border-gray-200'>
+        <div className='flex items-center'>
           <Checkbox
             checked={isAllSelected}
             indeterminate={isSomeSelected}
@@ -119,7 +119,7 @@ export const RecordSelector = ({ onNext, onPrev }: RecordSelectorProps) => {
         </div>
       </div>
 
-      <div className='flex justify-between'>
+      <div className='flex justify-between border-t border-gray-200'>
         <BackButton goBack={onPrev} />
         <NextButton onClick={onNext} disabled={selected.length === 0} />
       </div>

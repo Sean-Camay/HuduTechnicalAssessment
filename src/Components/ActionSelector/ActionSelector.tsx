@@ -62,7 +62,7 @@ export const ActionSelector = ({ onNext, onPrev }: ActionSelectorProps) => {
         ))}
       </div>
 
-      <div className='flex justify-end border-t border-gray-200'>
+      <div className='flex justify-between border-t border-gray-200'>
         <BackButton goBack={onPrev} />
 
         <FinishLaterButton />
