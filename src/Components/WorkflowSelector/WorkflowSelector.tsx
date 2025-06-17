@@ -37,7 +37,6 @@ export const WorkflowSelector = ({ onNext }: WorkflowSelectorProps) => {
   ]
 
   const handleOptionSelect = (optionId: string) => {
-    console.log('Selected option:', optionId)
     setSelected(optionId)
     dispatch({ type: 'SET_BASE', payload: optionId })
   }

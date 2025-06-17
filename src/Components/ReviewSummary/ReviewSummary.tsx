@@ -11,7 +11,6 @@ interface ActionSelectorProps {
 
 export const ReviewSummary = ({ onPrev, onEdit }: ActionSelectorProps) => {
   const { state } = useWizard()
-  console.log('state', state)
 
   const formatRecordTypeName = (id: string): string => {
     return id

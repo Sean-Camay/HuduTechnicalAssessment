@@ -24,7 +24,6 @@ export const ActionSelector = ({ onNext, onPrev }: ActionSelectorProps) => {
 
   const handleOptionSelect = (id: string) => {
     setSelected(id)
-    console.log('selected action', id)
     dispatch({ type: 'SET_ACTION', payload: id })
   }
 
