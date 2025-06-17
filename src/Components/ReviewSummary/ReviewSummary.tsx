@@ -19,8 +19,8 @@ export const ReviewSummary = ({ onPrev, onEdit }: ActionSelectorProps) => {
   }
 
   return (
-    <div className='flex flex-col gap-5 max-w-3xl mx-auto'>
-      <h2 className='text-base mb-5 text-black'>
+    <div className='flex flex-col gap-5 max-w-3xl'>
+      <h2 className='text-base text-black'>
         Review your workflow below. Click a step to make edits if needed.
       </h2>
 
@@ -52,12 +52,12 @@ export const ReviewSummary = ({ onPrev, onEdit }: ActionSelectorProps) => {
         </div>
       </div>
 
-      <div className='flex justify-between border-t border-gray-200'>
+      <div className='flex justify-between items-center border-t border-gray-200'>
         <BackButton goBack={onPrev} />
 
         <FinishLaterButton />
 
-        <button className='h-9 w-20 rounded text-white bg-[#1849a9] cursor-pointer text-sm'>
+        <button className='h-9 w-20 mt-5 rounded text-white bg-[#1849a9] cursor-pointer text-sm'>
           Save Draft
         </button>
       </div>

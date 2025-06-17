@@ -54,7 +54,7 @@ export const TriggerSelect = ({ onNext, onPrev }: RecordSelectorProps) => {
         ))}
       </div>
 
-      <div className='flex flex-row justify-between border-t border-gray-200'>
+      <div className='flex flex-row justify-between items-center border-t border-gray-200'>
         <BackButton goBack={onPrev} />
 
         <FinishLaterButton />

@@ -18,7 +18,7 @@ export const NextButton: React.FC<NextButtonProps> = ({
   backLabel = 'Back',
 }) => {
   return (
-    <div className='flex justify-between mt-5'>
+    <div className='flex justify-between'>
       {showBackButton ? (
         <button
           className='px-5 py-2.5 h-9 w-14 rounded text-blue-500 underline'

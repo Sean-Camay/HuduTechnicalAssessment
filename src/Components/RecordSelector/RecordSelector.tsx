@@ -119,7 +119,7 @@ export const RecordSelector = ({ onNext, onPrev }: RecordSelectorProps) => {
         </div>
       </div>
 
-      <div className='flex justify-between border-t border-gray-200'>
+      <div className='flex justify-between items-center border-t border-gray-200'>
         <BackButton goBack={onPrev} />
         <NextButton onClick={onNext} disabled={selected.length === 0} />
       </div>

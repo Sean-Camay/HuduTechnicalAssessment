@@ -20,7 +20,7 @@ export const FinishLaterButton = () => {
   }
 
   return (
-    <div className='relative mt-5'>
+    <div className='relative'>
       <button
         className='text-[#1849a9] cursor-pointer font-medium'
         onClick={handleSaveForLater}
