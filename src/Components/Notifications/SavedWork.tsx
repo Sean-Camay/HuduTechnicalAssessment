@@ -36,6 +36,12 @@ export const SavedWorkNotification = () => {
 
   const handleDiscardState = () => {
     localStorage.removeItem('wizardState')
+
+    dispatch({ type: 'SET_STEP', payload: 1 })
+    dispatch({ type: 'SET_BASE', payload: '' })
+    dispatch({ type: 'SET_RECORDS', payload: [] })
+    dispatch({ type: 'SET_TRIGGER', payload: '' })
+    dispatch({ type: 'SET_ACTION', payload: '' })
     setHasSavedWork(false)
   }
 
